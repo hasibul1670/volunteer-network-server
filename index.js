@@ -7,6 +7,7 @@ const ObjectId = require('mongodb').ObjectId;
 const password = "hasib110";
 require('dotenv').config()
 console.log()
+const port = 5000;
 
 const app = express();
 app.use(cors());
@@ -63,4 +64,4 @@ client.connect(err => {
 
 
 
-app.listen(5000);
+app.listen(process.env.PORT || port);
