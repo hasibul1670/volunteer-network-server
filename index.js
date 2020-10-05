@@ -5,6 +5,7 @@ const cors = require('cors');
 const { ObjectID } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
 const password = "hasib110";
+require('dotenv').config()
 
 console.log()
 const port = 5000;
